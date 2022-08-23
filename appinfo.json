@@ -1,0 +1,10 @@
+{
+  "id": "team.noteatgo.esw",
+  "version": "1.0.0",
+  "vendor": "Noteatgo",
+  "type": "web",
+  "main": "index.html",
+  "title": "EmergencyManagerDashBoard",
+  "icon": "icon.png",
+  "requiredPermissions": ["time.query", "activity.operation"]
+}
