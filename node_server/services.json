@@ -1,0 +1,9 @@
+{
+  "id": "team.noteatgo.server",
+  "description": "HelloWorld Service",
+  "services": [
+    {
+      "name": "team.noteatgo.server"
+    }
+  ]
+}
