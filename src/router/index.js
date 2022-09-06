@@ -3,14 +3,20 @@ import VueRouter from 'vue-router';
 import mainView from '@/views/mainView.vue';
 import droneView from '@/views/droneView.vue';
 import userInfo from '@/views/userInfo.vue';
+import login from '@/views/login.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    redirect: '/main',
+    redirect: '/login',
     name: 'mainView',
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: login,
   },
   {
     path: '/main',

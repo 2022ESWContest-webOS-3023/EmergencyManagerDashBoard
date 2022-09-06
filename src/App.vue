@@ -19,9 +19,6 @@
 export default {
   name: "App",
 
-  components: {},
-
-  data: () => ({}),
   methods: {
     toMain() {
       this.$router.push("/main");
