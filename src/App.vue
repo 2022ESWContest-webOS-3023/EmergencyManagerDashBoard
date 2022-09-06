@@ -1,56 +1,37 @@
 <template>
   <v-app id="inspire">
-    <v-app-bar></v-app-bar>
-    <v-navigation-drawer width="10%">
-      <v-row>
-        <v-col>
-          <v-icon>mdi-domain</v-icon>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col align-self>
-          <v-icon>mdi-domain</v-icon>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col align-self>
-          <v-icon>mdi-domain</v-icon>
-        </v-col>
-      </v-row>
-    </v-navigation-drawer>
+    <v-system-bar app height="80px" color="indigo">
+      <v-spacer></v-spacer>
+      <v-icon size="30" color="white" @click="toMain">mdi-account</v-icon>
+      <v-icon size="30" color="white" @click="toDrone">mdi-logout</v-icon>
+      <v-icon size="30" color="white" @click="toUser"
+        >mdi-information-outline</v-icon
+      >
+      <v-spacer></v-spacer>
+    </v-system-bar>
     <v-main>
-      <HelloWorld />
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-
 export default {
   name: "App",
 
-  components: {
-    HelloWorld,
-  },
+  components: {},
 
-  data: () => ({
-    routelist: [
-      {
-        name: "웹사이트 관리",
-        link: "/website",
-      },
-      {
-        name: "계정 관리",
-        link: "/management",
-      },
-    ],
-    selectedItem: 1,
-    items: [
-      { text: "Real-Time", icon: "mdi-clock" },
-      { text: "Audience", icon: "mdi-account" },
-      { text: "Conversions", icon: "mdi-flag" },
-    ],
-  }),
+  data: () => ({}),
+  methods: {
+    toMain() {
+      this.$router.push("/main");
+    },
+    toDrone() {
+      this.$router.push("/drone");
+    },
+    toUser() {
+      this.$router.push("/user");
+    },
+  },
 };
 </script>
