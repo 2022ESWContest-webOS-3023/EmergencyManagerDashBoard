@@ -4,6 +4,8 @@ import mainView from '@/views/mainView.vue';
 import droneView from '@/views/droneView.vue';
 import userInfo from '@/views/userInfo.vue';
 import login from '@/views/login.vue';
+import signup from '@/views/signup.vue';
+import findIdPw from '@/views/findIdPw.vue';
 
 Vue.use(VueRouter);
 
@@ -32,6 +34,16 @@ const routes = [
     path: '/user',
     name: 'userInfo',
     component: userInfo,
+  },
+  {
+    path: '/signup',
+    name: 'signup',
+    component: signup,
+  },
+  {
+    path: '/findIdPw',
+    name: 'findIdPw',
+    component: findIdPw,
   },
 ];
 
