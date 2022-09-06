@@ -21,7 +21,7 @@
               >
             </v-col>
             <v-col cols="8">
-              <v-text-field></v-text-field>
+              <v-text-field>비밀번호 암호화 작업 필요</v-text-field>
             </v-col>
           </v-row>
           <v-row class="d-flex justify-center align-center">
